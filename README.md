@@ -1,137 +1,235 @@
-# 🧠 Indra Lab — Biokimia Sistem Indra
+<div align="center">
 
-> Laboratorium belajar interaktif untuk memahami bagaimana rangsangan sensorik diubah menjadi sinyal biologis melalui jalur transduksi pada sistem indra.
+# 🧬 Indra Lab
+### 🔬 Biokimia Sistem Indra
 
-Indra Lab adalah aplikasi web edukasi berbahasa Indonesia yang menyajikan **enam jalur sinyal sensorik** melalui diagram 2D interaktif, penjelasan bertahap, dan kuis dengan penilaian otomatis. Dirancang sebagai pendamping belajar Biokimia Sistem Indra, aplikasi ini membantu menghubungkan rangsangan, reseptor, molekul pensinyalan, perubahan ion, potensial membran, hingga pelepasan neurotransmiter.
+**From Stimulus to Sensation.** (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
 
-## ✨ Fitur Utama
+*Bagaimana cahaya menjadi penglihatan? Bagaimana getaran udara berubah menjadi suara? Dan bagaimana tubuh menerjemahkan dunia menjadi sinyal yang dapat dipahami otak?* (◎o◎)
 
-- 🧬 **Enam jalur transduksi sensorik** dengan penjelasan mekanisme molekuler secara bertahap.
-- 🔬 **Diagram 2D interaktif** yang menampilkan komponen anatomi, molekul, kanal, pergerakan ion, dan perubahan potensial membran.
-- ⏯️ **Navigasi langkah demi langkah** untuk mempelajari urutan peristiwa dalam setiap jalur.
-- 📝 **Kuis interaktif** dengan soal pilihan ganda dan soal mengurutkan tahapan.
-- 🎯 **Penilaian otomatis** beserta penjelasan jawaban.
-- 📊 **Pelacakan kemajuan belajar** untuk melihat skor terbaik, status penguasaan tiap jalur, dan riwayat sesi.
-- 💾 **Penyimpanan lokal** melalui `localStorage` pada browser, sehingga kemajuan dapat tersedia kembali di browser yang sama.
-- 📱 **Tampilan responsif** untuk desktop maupun perangkat seluler.
-- ♿ **Fitur aksesibilitas dasar**, termasuk navigasi semantik, tautan lewati ke konten, dan pengumuman status bagi pembaca layar.
+Selamat datang di **Indra Lab** — laboratorium belajar interaktif untuk menjelajahi mekanisme biokimia dan fisiologi sistem indra manusia! 🧠🧪
 
-## 🔎 Enam Jalur yang Dipelajari
+(｡•̀ᴗ-)✧ **Explore · Understand · Connect** ✧(-ᴗ•́｡)
 
-| Jalur | Fokus | Rangsangan / proses utama |
-|---|---|---|
-| 👁️ **Optik** | Fototransduksi retina | Cahaya mengaktifkan rodopsin dan memulai kaskade transduksi fotoreseptor. |
-| 🌡️ **Integumen** | Transduksi termal pada kulit | Rangsangan panas mengaktifkan ujung saraf sensorik. |
-| 👃 **Olfaktori** | Transduksi penciuman | Molekul odoran mengaktifkan neuron sensorik olfaktori. |
-| 👅 **Gustatori** | Transduksi rasa manis | Aktivasi reseptor rasa pada sel pengecap tipe II. |
-| 🧭 **Vestibular** | Transduksi percepatan linier | Pergerakan otokonia membengkokkan berkas rambut pada makula sakulus. |
-| 🎧 **Koklear** | Transduksi pendengaran | Getaran koklea membengkokkan stereosilia sel rambut dan memicu pelepasan glutamat. |
+[![Status](https://img.shields.io/badge/Status-Educational%20Project-2563eb?style=flat-square)](#)
+[![Technology](https://img.shields.io/badge/Built%20with-HTML%20%7C%20CSS%20%7C%20JavaScript-f59e0b?style=flat-square)](#teknologi)
+[![Learning](https://img.shields.io/badge/Learning-Interactive-16a34a?style=flat-square)](#fitur-utama)
 
-Setiap jalur dilengkapi langkah-langkah mekanisme, konteks fisiologis, dan poin penting untuk membantu pengulangan materi.
-
-## 🚀 Menjalankan Aplikasi
-
-Indra Lab merupakan aplikasi web statis yang menggunakan HTML, CSS, dan JavaScript biasa. **Tidak memerlukan instalasi paket, server backend, atau API key.**
-
-### Opsi 1 — Buka langsung
-
-1. Unduh atau kloning repositori ini.
-2. Buka file `index.html` menggunakan browser modern.
-
-### Opsi 2 — Jalankan melalui server lokal
-
-Untuk pengalaman yang lebih konsisten, jalankan server HTTP sederhana dari direktori proyek.
-
-Dengan Python:
-
-```bash
-python -m http.server 8000
-```
-
-Kemudian buka:
-
-```text
-http://localhost:8000
-```
-
-### Opsi 3 — GitHub Pages
-
-Repositori ini dapat dipublikasikan sebagai situs statis melalui GitHub Pages:
-
-1. Buka **Settings → Pages** pada repositori.
-2. Pada bagian *Build and deployment*, pilih **Deploy from a branch**.
-3. Pilih branch `main` dan folder `/(root)`, lalu simpan.
-4. Tunggu proses deployment selesai dan buka URL yang ditampilkan oleh GitHub Pages.
-
-## 🗂️ Struktur Proyek
-
-```text
-indrabiokim/
-├── index.html       # Kerangka halaman dan titik masuk aplikasi
-├── styles.css       # Gaya visual, layout responsif, dan komponen UI
-├── data.js          # Data jalur, langkah mekanisme, soal kuis, dan kredit aset
-├── scenes.js        # Ilustrasi SVG/2D untuk jalur sensorik
-├── app.js           # Navigasi, interaksi diagram, kuis, dan progres belajar
-├── assets/
-│   ├── fonts/       # Berkas font lokal
-│   └── img/         # Gambar anatomi dan histologi
-└── README.md
-```
-
-## 🧭 Cara Menggunakan
-
-1. Buka **Indeks jalur** untuk melihat materi yang tersedia.
-2. Pilih salah satu jalur sensorik.
-3. Ikuti urutan langkah untuk memahami rangsangan, perubahan molekuler, pergerakan ion, dan respons sel.
-4. Gunakan menu **Kuis** untuk menguji pemahaman pada satu jalur atau seluruh materi.
-5. Buka **Kemajuan** untuk memantau skor dan riwayat latihan.
-
-Kuis mendukung sesi dengan jumlah soal tertentu maupun seluruh soal yang tersedia. Jenis soal mencakup pilihan ganda dan pengurutan tahapan.
-
-## 💾 Data dan Privasi
-
-Kemajuan belajar disimpan secara lokal pada browser menggunakan kunci penyimpanan `indralab.kemajuan.v1`. Data ini tidak membutuhkan akun atau backend untuk fungsi penyimpanan yang tersedia di aplikasi.
-
-- Kemajuan tersimpan pada browser dan perangkat yang digunakan.
-- Menghapus data situs atau penyimpanan browser dapat menghapus kemajuan belajar.
-- Data tidak otomatis tersinkronisasi antarperangkat atau antarbrowser.
-
-## 🧰 Teknologi
-
-- **HTML5** — struktur dan semantik halaman.
-- **CSS3** — layout responsif, desain antarmuka, dan animasi.
-- **JavaScript** — navigasi berbasis hash, diagram interaktif, kuis, dan penyimpanan progres.
-- **SVG** — visualisasi jalur dan ilustrasi 2D.
-- **Web Storage API** — penyimpanan kemajuan di browser.
-
-Aplikasi tidak menggunakan framework JavaScript maupun dependensi paket eksternal untuk menjalankan fitur inti.
-
-## 📚 Catatan Akademik
-
-Indra Lab merupakan **media bantu belajar**, bukan pengganti buku ajar, kuliah, atau penilaian dosen. Detail fisiologi dan biokimia sebaiknya diverifikasi dengan sumber akademik yang relevan, terutama ketika digunakan untuk laporan, ujian, atau keperluan klinis.
-
-Aset gambar yang dicantumkan dalam data aplikasi memiliki kredit dan informasi lisensi masing-masing. Periksa sumber serta ketentuan lisensi sebelum menggunakan kembali aset di luar proyek ini.
-
-## 🛣️ Pengembangan Berikutnya
-
-Beberapa peningkatan yang dapat dipertimbangkan:
-
-- [ ] Menambahkan referensi akademik untuk setiap jalur dan klaim fisiologis.
-- [ ] Menyediakan opsi ekspor atau impor progres belajar.
-- [ ] Menambah mode latihan berbasis topik dan pengulangan soal yang belum dikuasai.
-- [ ] Melakukan peninjauan ilmiah dan uji aksesibilitas secara sistematis.
-- [ ] Menambahkan panduan kontribusi dan pelaporan masalah.
-
-## 👩‍💻 Kontribusi
-
-Saran perbaikan materi, koreksi ilmiah, laporan bug, dan ide fitur sangat terbuka. Silakan buat *issue* untuk mendiskusikan masalah atau usulan sebelum mengajukan perubahan.
-
-## 📄 Lisensi
-
-Lisensi repositori belum dinyatakan secara eksplisit. Sebelum menggunakan atau mendistribusikan ulang kode proyek, pastikan pemilik repositori telah menentukan lisensi yang sesuai. Lisensi kode dan lisensi aset pihak ketiga dapat berbeda.
+</div>
 
 ---
 
-<p align="center">
-  <strong>Belajar bukan sekadar menghafal jalur—pahami bagaimana rangsangan menjadi sinyal. 🧠✨</strong>
-</p>
+## 🌌 What Is Indra Lab? (๑•̀ㅂ•́)و✧
+
+Pernah bertanya-tanya bagaimana retina mendeteksi foton, bagaimana molekul aroma memicu respons saraf, atau bagaimana koklea mengubah getaran menjadi impuls listrik?
+
+(⊙_⊙)？ Kok bisa, ya?!
+
+Semua itu berawal dari sebuah proses fundamental: **transduksi sensorik**.
+
+Indra Lab adalah aplikasi web edukasi yang mengajakmu menelusuri perjalanan stimulus dari lingkungan hingga menjadi sinyal biologis. Alih-alih hanya menghafal nama molekul, kamu bisa mempelajari bagaimana komponen-komponen dalam suatu jalur sensorik saling terhubung.
+
+(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+
+🎯 **Misi kami:** membuat mekanisme sistem indra lebih mudah dipahami melalui visualisasi, penjelasan bertahap, dan latihan interaktif.
+
+Karena memahami fisiologi bukan cuma soal mengingat *apa* yang terjadi, tetapi juga mengerti *bagaimana* dan *mengapa* proses itu berlangsung. ( •̀ ω •́ )✧
+
+## 🔬 Explore the Six Sensory Pathways (☆▽☆)
+
+Enam jalur sensorik siap kamu eksplorasi! Pilih jalurmu, amati mekanismenya, dan mulai petualangan biokimiamu~! (๑˃ᴗ˂)ﻭ
+
+| 🔍 Sistem | ⚡ Mekanisme yang Dipelajari |
+|---|---|
+| 👁️ **Optik** | Fototransduksi retina — bagaimana cahaya memicu respons fotoreseptor. (✧ω✧) |
+| 🌡️ **Integumen** | Pengenalan rangsangan termal melalui sistem sensorik kulit. (๑•̀ㅂ•́)و |
+| 🌸 **Olfaktori** | Transduksi olfaktori — bagaimana molekul odorant memicu sinyal sensorik. (￣▽￣)ノ |
+| 🍬 **Gustatori** | Transduksi rasa manis dan mekanisme pensinyalannya. (๑´ڡ`๑) |
+| 🧭 **Vestibular** | Deteksi percepatan linear melalui sistem vestibular, dengan fokus pada sakulus. (◎_◎;) |
+| 🎧 **Koklear** | Mekanotransduksi pendengaran — bagaimana getaran diubah menjadi sinyal listrik. ♪(´▽｀) |
+
+> 💡 **Think about it!** ( •̀ᴗ•́ )و  
+> Stimulus yang berbeda, reseptor yang berbeda, dan mekanisme molekuler yang berbeda — tetapi semuanya memiliki tujuan yang sama: menyampaikan informasi sensorik kepada sistem saraf.  
+> Keren, kan?! (ﾉ´ヮ`)ﾉ*: ･ﾟ
+
+## ✨ What Makes It Special? (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+
+### 🧩 01 — Learn Step by Step (๑•̀ㅂ•́)و✧
+Jangan buru-buru menghafal semuanya sekaligus! Jelajahi mekanisme sensorik secara bertahap. Pecah jalur yang kompleks menjadi rangkaian proses yang lebih mudah diikuti.
+
+Pelan-pelan, satu mekanisme demi satu mekanisme. You got this! (ง •̀_•́)ง
+
+### 🧬 02 — See the Mechanism (◎o◎)
+Gunakan diagram interaktif untuk membantu memahami hubungan antara stimulus, reseptor, komponen molekuler, dan respons seluler.
+
+**Visualisasikan prosesnya, hubungkan komponennya, pahami mekanismenya!** (✧ω✧)
+
+### 🧠 03 — Test Your Understanding (ง'̀-'́)ง
+Uji pemahaman melalui kuis pilihan ganda dan penyusunan urutan proses. Setelah menjawab, pelajari penjelasan yang tersedia untuk memperkuat pemahaman.
+
+Salah menjawab? Tidak apa-apa! (´｡• ᵕ •｡`) Kesalahan adalah kesempatan untuk menemukan bagian yang belum benar-benar kamu pahami. Coba lagi dan bangun pemahaman yang lebih kuat! (๑˃ᴗ˂)ﻭ
+
+### 📊 04 — Track Your Progress (ﾉ◕ヮ◕)ﾉ
+Pantau perkembangan belajar melalui dasbor kemajuan, skor terbaik, status penyelesaian, dan riwayat yang tersimpan di browser.
+
+Sedikit demi sedikit, pemahamanmu akan berkembang. (｡•̀ᴗ-)✧
+
+### 📱 05 — Learn Across Devices (๑˃ᴗ˂)ﻭ
+Antarmuka dirancang agar dapat digunakan pada berbagai ukuran layar, sehingga kamu bisa belajar dengan lebih fleksibel.
+
+Belajar kapan pun kamu siap~ (ﾉ´ヮ`)ﾉ*: ･ﾟ✧
+
+### ⚡ 06 — Simple, Lightweight, and Accessible ( •̀ ω •́ )✧
+Indra Lab menggunakan teknologi web standar tanpa memerlukan framework JavaScript atau backend untuk fitur inti.
+
+Buka aplikasinya, pilih jalur sensorik, lalu mulai eksplorasi! (๑•̀ㅂ•́)و✧
+
+## 🚀 Get Started! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+
+Siap masuk ke laboratorium? Let's gooo! (ง •̀_•́)ง
+
+### 💻 Option 1 — Quick Start
+
+1. Unduh atau *clone* repositori ini.
+2. Buka folder proyek.
+3. Jalankan server web lokal menggunakan Python:
+
+   ```bash
+   python -m http.server 8000
+   ```
+
+4. Buka alamat berikut di browser:
+
+   ```text
+   http://localhost:8000
+   ```
+
+Tadaaa~! (ﾉ´ヮ`)ﾉ*: ･ﾟ✧ Sekarang kamu bisa mulai menjelajahi Indra Lab!
+
+> 💡 Jika Python belum tersedia, kamu dapat menggunakan server web lokal alternatif. (´｡• ᵕ •｡`)
+
+### 🌐 Option 2 — Explore Online
+
+Ingin langsung mencoba tanpa mengunduh proyek? (☆▽☆)
+
+**🔗 Demo:** *Tambahkan URL GitHub Pages setelah deployment terverifikasi.*
+
+## 🛠️ Built With (๑•̀ㅂ•́)و✧
+
+| Teknologi | Peran |
+|---|---|
+| **HTML5** | Struktur halaman dan komponen aplikasi. (｡•̀ᴗ-)✧ |
+| **CSS3** | Tata letak, tampilan visual, dan responsivitas. (✧ω✧) |
+| **JavaScript** | Interaksi, navigasi pembelajaran, kuis, dan pengelolaan kemajuan. (ง •̀_•́)ง |
+| **SVG** | Visualisasi diagram dan mekanisme sensorik. (◎o◎) |
+| **LocalStorage** | Penyimpanan kemajuan belajar di browser. (๑•̀ㅂ•́)و |
+
+Tidak ada backend yang diperlukan untuk fitur inti. Data kemajuan disimpan secara lokal pada browser yang digunakan.
+
+Simple, lightweight, and ready to explore! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+
+## 📁 Project Structure (⌐■_■)
+
+```text
+indrabiokim/
+├── index.html       # Struktur utama aplikasi
+├── styles.css       # Styling dan tata letak
+├── data.js          # Data dan konten pembelajaran
+├── scenes.js        # Definisi visualisasi dan adegan interaktif
+├── app.js           # Logika aplikasi dan interaksi pengguna
+├── assets/
+│   ├── fonts/       # Aset font
+│   └── img/         # Aset gambar
+└── README.md        # Dokumentasi proyek
+```
+
+Setiap berkas memiliki perannya masing-masing. Bersama-sama, mereka membentuk pengalaman belajar Indra Lab. (๑˃ᴗ˂)ﻭ
+
+## 🧪 How to Use (｡•̀ᴗ-)✧
+
+Belum tahu harus mulai dari mana? Tenang, ikuti langkah berikut! (´｡• ᵕ •｡`)
+
+1. **Pilih jalur sensorik** yang ingin kamu pelajari. 👁️
+2. **Ikuti setiap tahapan** untuk memahami mekanisme yang ditampilkan. 🔬
+3. **Amati visualisasi** dan hubungkan setiap komponen dalam jalur tersebut. 🧬
+4. **Kerjakan kuis** untuk menguji pemahaman. 🧠
+5. **Periksa hasil dan kemajuan** untuk mengetahui bagian yang perlu dipelajari kembali. 📊
+
+### 💡 Pro Tip! (ง'̀-'́)ง
+
+Jangan hanya menghafal urutan molekul! Coba tanyakan pada dirimu sendiri:
+
+- *Apa fungsi komponen ini?* (・_・ヾ
+- *Mengapa proses ini harus terjadi?* (⊙_⊙)
+- *Apa yang terjadi jika komponen ini tidak berfungsi?* (◎_◎;)
+- *Bagaimana perubahan ini memengaruhi keseluruhan jalur sensorik?* (๑•̀ㅂ•́)و
+
+**Understand the mechanism, not just the memorization!** (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+
+## 🎓 An Educational Project (｡•̀ᴗ-)✧
+
+Indra Lab dikembangkan sebagai media pembelajaran untuk membantu eksplorasi biokimia dan fisiologi sistem indra.
+
+Konten di dalam aplikasi ditujukan untuk tujuan edukasi. Aplikasi ini bukan pengganti buku ajar, publikasi ilmiah, pembelajaran klinis, atau penilaian oleh tenaga pengajar.
+
+Untuk penggunaan akademik, setiap mekanisme sebaiknya dipelajari bersama sumber ilmiah tepercaya dan diperiksa kesesuaiannya dengan literatur yang relevan.
+
+Stay curious, stay critical! ( •̀ᴗ•́ )و
+
+## 🗺️ What's Next? (☆▽☆)
+
+Perjalanan Indra Lab belum berakhir! Berikut beberapa ide pengembangan yang dapat membuat pengalaman belajar semakin kaya. (ﾉ´ヮ`)ﾉ*: ･ﾟ✧
+
+- 📚 **Scientific References** — menambahkan referensi ilmiah pada setiap jalur sensorik.
+- 🔎 **Deeper Exploration** — memperluas penjelasan mekanisme molekuler dan fisiologis.
+- 🧠 **Smarter Revision** — mengembangkan latihan ulang berdasarkan materi yang belum dikuasai.
+- 📈 **Progress Export** — menyediakan opsi ekspor kemajuan belajar.
+- ♿ **Accessibility Improvements** — menyempurnakan navigasi keyboard dan dukungan teknologi bantu.
+- 🌐 **More Sensory Pathways** — mengeksplorasi mekanisme sensorik lainnya.
+
+(๑•̀ㅂ•́)و✧ Satu fitur baru, satu langkah menuju pengalaman belajar yang lebih baik!
+
+*Catatan: daftar di atas merupakan gagasan pengembangan, bukan klaim bahwa fitur-fitur tersebut sudah tersedia.*
+
+## 🤝 Contributions (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+
+Punya ide? Menemukan kesalahan? Atau ingin ikut mengembangkan Indra Lab?
+
+**You're welcome here!** (๑˃ᴗ˂)ﻭ💙
+
+Kamu dapat membantu melalui:
+
+- 🐛 Melaporkan bug atau ketidaksesuaian konten. ( •̀ ω •́ )✧
+- 💡 Mengusulkan fitur pembelajaran baru. (☆▽☆)
+- 🧬 Meninjau akurasi penjelasan ilmiah dengan referensi yang sesuai. (๑•̀ㅂ•́)و
+- 💻 Mengembangkan visualisasi dan pengalaman pengguna. (ง •̀_•́)ง
+
+Sebelum mengajukan perubahan, pastikan informasi ilmiah yang ditambahkan memiliki dasar yang dapat diverifikasi.
+
+Mari membangun media belajar yang semakin baik bersama-sama! (ﾉ´ヮ`)ﾉ*: ･ﾟ✧
+
+## 📜 License & Attribution (｡•̀ᴗ-)✧
+
+Lisensi proyek dan ketentuan penggunaan kode perlu mengikuti deklarasi lisensi resmi repositori. Jika lisensi belum ditetapkan, jangan mengasumsikan bahwa kode dapat digunakan ulang tanpa batasan.
+
+Aset eksternal juga perlu mengikuti ketentuan lisensi dan atribusi masing-masing. Informasi kredit yang tersedia di dalam kode proyek harus dipertahankan dan diperbarui ketika diperlukan.
+
+Kredit untuk kreator dan sumber asli itu penting, ya! (´｡• ᵕ •｡`)
+
+---
+
+<div align="center">
+
+### 🧠 The World Is Full of Signals. Let's Understand Them.
+
+*Dari stimulus menjadi sinyal.*  
+*Dari sinyal menjadi sensasi.*  
+*Dari mekanisme menjadi pemahaman.*
+
+(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ **Welcome to Indra Lab!** ✧･ﾟ:*(◕ヮ◕ヽ)
+
+🔬 Keep exploring. 🧬 Keep questioning. 🧠 Keep learning.
+
+**Made for curious minds.** (๑˃ᴗ˂)ﻭ💙
+
+</div>
