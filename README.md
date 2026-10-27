@@ -1,3 +1,4 @@
+<img width="2048" height="768" alt="image" src="https://github.com/user-attachments/assets/82ff8969-6e3b-4a00-acf6-af5e53de8660" />
 <div align="center">
 
 # 🧬 Indra Lab
